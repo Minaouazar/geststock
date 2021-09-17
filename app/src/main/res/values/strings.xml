@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gestion des Produits</string>
+    <string name="invalide_mobile">invalide _mobile</string>
+    <string name="invalide_email">l\'adresse email est invalide</string>
+</resources>

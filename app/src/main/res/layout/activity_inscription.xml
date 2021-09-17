@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:orientation="vertical"
+    tools:context=".Inscription">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="384dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="Inscription"
+        android:textColor="#B89767"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtNom"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Nom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Nom"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableRight="@drawable/person"
+            android:fontFamily="serif"
+            android:outlineAmbientShadowColor="#FFFFFF"
+            android:textColorHighlight="#2301060C" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPrenom"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:hint="Prenom">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Prenom"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:drawableRight="@drawable/person"
+            android:fontFamily="serif" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/ic_baseline_email_24"
+            android:fontFamily="serif"
+            android:inputType="textEmailAddress"
+            android:shadowColor="#9C27B0" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPhone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:hint="Phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableRight="@drawable/ic_baseline_phone_24"
+            android:fontFamily="serif"
+            android:inputType="phone"
+            tools:targetApi="jelly_bean" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtPass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:hint="Mot de Passe"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:fontFamily="serif"
+            android:inputType="textPassword"
+            android:maxLength="21"
+            tools:targetApi="jelly_bean" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/buttonincription"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Inscription"
+        android:textColor="#130707"
+        app:backgroundTint="#CFAB77" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+        android:onClick="connecter"
+        android:text="Vous avez un compte ?Connectez-vous"
+        android:textColor="#D701080B" />
+
+
+</LinearLayout>
+
+
+
+
+

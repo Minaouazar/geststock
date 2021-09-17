@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Ventee">
+
+
+    <LinearLayout
+        android:id="@+id/layRecherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5891C3"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtRecherchevent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Rechercher vente"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnRecherche"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#AAD3E6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:paddingLeft="10dp"
+                android:text="Nom et prenom de client"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtnom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="104dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:paddingLeft="10dp"
+                android:text="marchendise"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtmarchendise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="99dp"
+                android:layout_height="33dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:paddingLeft="10dp"
+                android:text="prix"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtprix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="174dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:paddingLeft="10dp"
+                android:text="Date de vente"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtdate2"
+                android:layout_width="282dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="6"
+                android:fontFamily="sans-serif-black"
+                android:hint="         choisir une date "
+
+                android:textColor="#050707"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layNaviguer"
+            android:layout_width="397dp"
+            android:layout_height="74dp"
+            android:background="#AAD3E6"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/precedent"
+                android:textColor="#0D2FEC"
+                app:backgroundTint="#F1F1F3" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="86dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/img"
+                android:fontFamily="sans-serif"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#0D2FEC"
+                android:textColorHint="#FFFFFF"
+                app:backgroundTint="#F8F9FB" />
+
+            <Button
+                android:id="@+id/btnfirst"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:text="First"
+                android:textColor="#0D2FEC"
+                android:textSize="12sp"
+                app:backgroundTint="#FFEB3B" />
+
+            <Button
+                android:id="@+id/btnlast"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:text="Last"
+                android:textColor="#0D2FEC"
+                android:textColorHint="#FFFFFF"
+                android:textSize="12sp"
+                app:backgroundTint="#EC4510" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="169dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/vente">
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5891C3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="AJOUTER"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#010312"
+                app:backgroundTint="#69CDDA" />
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="METTRE A JOUR"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#010312"
+                android:textSize="11dp"
+                app:backgroundTint="#B7BCD3" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="SUPPRIMER"
+                android:textColor="#010312"
+                app:backgroundTint="#DFACC4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/laySave"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:background="#AAD3E6"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#EAB1C4"
+                android:fontFamily="serif"
+                android:text="ANNULER"
+                android:textColor="#010312"
+                app:backgroundTint="#B7BCD3" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="#5891C3"
+                android:fontFamily="serif"
+                android:text="ENREGISTRER"
+                android:textColor="#010312"
+                app:backgroundTint="#88E18C" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
